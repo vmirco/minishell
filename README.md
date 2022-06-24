@@ -22,25 +22,34 @@ e "resto", per poi passarli alla my_pipe, che decide se richiamare la funzione
 pipe_handler, in caso di pipe multipla, oppure se chiamare direttamente la my_exec.
 
 File presenti:
-- shell.c:
-		MAIN
-- builtin.c:
-		cd(path)
-- exec.c: 
-		my_exec(parsed_cmd, command_no)
-- fork.c:
-		my_fork(parsed_cmd, command_no)
-- parser.c:	
-		parser(COMMAND)
-		syntax(COMMAND, command_no, pipe_no)
-		redirection(path, in_out)
-		translate(parsed_cmd, command_no)
-- pipe.c:
-		pipe_handler(parsed_cmd, command_no, pipe_no)
-		my_pipe(first_cmd, new_cmd, counter, dim, pipe_no)
-- utils.c:
-		prompt()
-		check_redir(parsed_cmd, command_no)
-- shell_lib.c: 
-		LIBRERIA GENERALE
-- makefile
+	
+shell.c:
+- MAIN
+	
+builtin.c:
+- cd(path)
+	
+exec.c: 
+- my_exec(parsed_cmd, command_no)
+	
+fork.c:
+- my_fork(parsed_cmd, command_no)
+	
+parser.c:	
+- parser(COMMAND)
+- syntax(COMMAND, command_no, pipe_no)
+- redirection(path, in_out)
+- translate(parsed_cmd, command_no)
+	
+pipe.c:
+- pipe_handler(parsed_cmd, command_no, pipe_no)
+- my_pipe(first_cmd, new_cmd, counter, dim, pipe_no)
+	
+utils.c:
+- prompt()
+- check_redir(parsed_cmd, command_no)
+	
+shell_lib.c: 
+- LIBRERIA GENERALE
+	
+makefile
