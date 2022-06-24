@@ -3,9 +3,9 @@
 uBash - Unige 2020
 
 Gruppo:
-Samuele Crea - S4868097
-Mirco Vella - S4803218
-Camillo Ballestrasse - S4545114
+- Samuele Crea 
+- Mirco Vella 
+- Camillo Ballestrasse
 
 Programma che simula una versione semplificata della bash.
 Note sintassi:
